@@ -339,8 +339,8 @@ int deletebooks()    //function that delete items from file fp
                 fclose(ft);
                 fclose(fp);
                 remove("record.dat");
-                rename("test.txt","record.dat"); //copy all item from temporary file to fp except that
-                fp=fopen("record.txt","rb+");    //we want to delete
+                rename("test.dat","record.dat"); //copy all item from temporary file to fp except that
+                fp=fopen("record.dat","rb+");    //we want to delete
                 if(findbook=='t')
                 {
                     gotoxy(10,10);
